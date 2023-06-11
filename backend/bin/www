@@ -5,10 +5,13 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('backend:server');
+var debug = require('debug');
 var http = require('http');
 const mongoose = require('mongoose');
 const { mongoURI: db } = require('../config/keys.js');
+
+const serverLogger = debug('backend:server');
+const dbLogger = debug('backend:mongodb');
 
 /**
  * Get port from environment and store in Express.
