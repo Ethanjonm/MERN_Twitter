@@ -33,7 +33,7 @@ mongoose
 
     
 
-    server.listen(port)
+    // server.listen(port)
   })
   .catch(err => serverLogger(err));
 
